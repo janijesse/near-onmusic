@@ -1,6 +1,6 @@
 import Image from "next/image";
 import dynamic from "next/dynamic";
-
+import React, { useState } from "react";
 import NearLogo from "/public/near.svg";
 import styles from "@/styles/app.module.css";
 
@@ -9,6 +9,7 @@ const VideoPlayer = dynamic(() => import("@/components/videoPlayer"), {
 });
 
 export default function Home() {
+  const[isSignedIn, setisSignedIn]= useState(false);
   return (
     <>
       <main className={styles.main}>
@@ -29,10 +30,17 @@ export default function Home() {
             </div>
           </div>
         </div>
-
-        <div className={styles.videoContainer}>
+{isSignedIn ? ( <div className={styles.videoContainer}>
           <VideoPlayer />
         </div>
+
+) : (
+  <p></p>
+
+)
+
+}
+       
 
         <div className={styles.grid}></div>
       </main>
