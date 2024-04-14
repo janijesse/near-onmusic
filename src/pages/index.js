@@ -3,6 +3,8 @@ import dynamic from "next/dynamic";
 import React, { useState } from "react";
 import NearLogo from "/public/near.svg";
 import styles from "@/styles/app.module.css";
+import '@radix-ui/colors/green.css';
+
 
 const VideoPlayer = dynamic(() => import("@/components/videoPlayer"), {
   ssr: false,
