@@ -32,17 +32,9 @@ export default function Home() {
             </div>
           </div>
         </div>
-{isSignedIn ? ( <div className={styles.videoContainer}>
+ <div className={styles.videoContainer}>
           <VideoPlayer />
         </div>
-
-) : (
-  <p></p>
-
-)
-
-}
-       
 
         <div className={styles.grid}></div>
       </main>
