@@ -33,7 +33,7 @@ class VideoPlayer extends Component {
     const { playing, volume, muted } = this.state;
 
     return (
-      <div
+      <div 
         style={{
           display: "flex",
           flexDirection: "column",
@@ -55,7 +55,7 @@ class VideoPlayer extends Component {
         >
           <ReactPlayer
             className="react-player"
-            url="https://www.youtube.com/watch?v=7QHNC4YBAYo"
+            url="https://youtu.be/WaPbT6Z_y-0?feature=shared"
             playing={playing}
             volume={volume}
             muted={muted}
@@ -77,47 +77,21 @@ class VideoPlayer extends Component {
             alignItems: "center",
           }}
         >
-          <button
-            style={{
-              margin: "0 10px",
-              fontSize: "16px",
-              padding: "8px 16px",
-              backgroundColor: "#4CAF50",
-              color: "white",
-              border: "none",
-              borderRadius: "4px",
-              cursor: "pointer",
-            }}
+          <button class="btn btn-black border-white"
+         
+            
             onClick={this.handleStop}
           >
             Stop
           </button>
-          <button
-            style={{
-              margin: "0 10px",
-              fontSize: "16px",
-              padding: "8px 16px",
-              backgroundColor: "#4CAF50",
-              color: "white",
-              border: "none",
-              borderRadius: "4px",
-              cursor: "pointer",
-            }}
+          <button class="btn btn-white border-white"
+            
             onClick={this.handlePlayPause}
           >
             {playing ? "Pause" : "Play"}
           </button>
-          <button
-            style={{
-              margin: "0 10px",
-              fontSize: "16px",
-              padding: "8px 16px",
-              backgroundColor: "#4CAF50",
-              color: "white",
-              border: "none",
-              borderRadius: "4px",
-              cursor: "pointer",
-            }}
+          <button class="btn btn-white border-white"
+           
             onClick={this.handleClickFullscreen}
           >
             Fullscreen
@@ -133,17 +107,7 @@ class VideoPlayer extends Component {
               margin: "0 10px",
             }}
           />
-          <button
-            style={{
-              margin: "0 10px",
-              fontSize: "16px",
-              padding: "8px 16px",
-              backgroundColor: "#4CAF50",
-              color: "white",
-              border: "none",
-              borderRadius: "4px",
-              cursor: "pointer",
-            }}
+          <button class="btn btn-white border-white"
             onClick={this.handleToggleMuted}
           >
             {muted ? "Unmute" : "Mute"}

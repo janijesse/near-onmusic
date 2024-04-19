@@ -87,7 +87,15 @@ a {
   color: inherit;
   text-decoration: none;
 }
+.videoContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1cm;
+}
 
+.videoContainer > * {
+  flex: 0 0 30%; /* 30% width for each video */
+}
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;

@@ -29,7 +29,7 @@ export const Navigation = () => {
           <Image priority src={NearLogo} alt="NEAR" width="30" height="24" className="d-inline-block align-text-top" />
         </Link>
         <div className='navbar-nav pt-1'>
-          <button className="btn btn-secondary" onClick={action} > {label} </button>
+          <button className="btn btn-warning" onClick={action} > {label} </button>
         </div>
       </div>
     </nav>
